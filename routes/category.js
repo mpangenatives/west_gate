@@ -96,7 +96,7 @@ router.put('/:id', asyncHandler(async (req, res) => {
             let image = req.body.image;
 
             if (req.file) {
-                image = `http://https://west-gate-nine.vercel.app/image/category/${req.file.filename}`;
+                image = `http://west-gate-nine.vercel.app/image/category/${req.file.filename}`;
             }
 
             if (!name || !image) {
